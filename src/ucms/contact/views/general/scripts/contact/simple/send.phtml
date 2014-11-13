@@ -1,0 +1,35 @@
+<?php if ($this->mailFailed): ?>
+Could not send mail, try again later.<br /><br />
+<?php endif ?>
+
+<form method="post" action="">
+  <dl>
+    <dt><label for="name">Name</label></dt>
+    <dd>
+      <?php echo $this->error($this->form, 'name')?>
+      <input type="text" name="form[name]" id="name" value="<?php echo $this->escape($this->form['name'])?>" />
+    </dd>
+  </dl>
+  
+  <dl>
+    <dt><label for="email">Email</label></dt>
+    <dd>
+      <?php echo $this->error($this->form, 'email')?>
+      <input type="text" name="form[email]" id="email" value="<?php echo $this->escape($this->form['email'])?>" />
+    </dd>
+  </dl>
+  
+  <dl>
+    <dt><label for="message">Message</label></dt>
+    <dd>
+      <?php echo $this->error($this->form, 'message')?>
+      <textarea name="form[message]" id="message"><?php echo $this->escape($this->form['message'])?></textarea>
+    </dd>
+  </dl>
+  
+  <dl>
+    <dd>
+      <input type="submit" value="Send" />
+    </dd>
+  </dl>
+</form>

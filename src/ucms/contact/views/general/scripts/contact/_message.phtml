@@ -1,0 +1,4 @@
+<?php foreach($this->form->toArray() as $name => $value): ?>
+<b><?php echo $this->escape($name)?></b><br />
+<?php echo $this->escape($value) ?><br /><br />
+<?php endforeach ?>
