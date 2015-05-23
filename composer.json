@@ -13,9 +13,9 @@
 	  		}
 	  ],
     "require": {
-        "robvanaarle/ultimo-config-mvc": "dev-master",
-        "robvanaarle/ultimo-form-mvc": "dev-master",
-        "robvanaarle/ultimo-phptpl-mvc": "dev-master",
+        "robvanaarle/ultimo-mvc-config": "dev-master",
+        "robvanaarle/ultimo-mvc-form": "dev-master",
+        "robvanaarle/ultimo-mvc-phptpl": "dev-master",
         "robvanaarle/ultimo-validation": "dev-master"
     },
     "autoload": {
